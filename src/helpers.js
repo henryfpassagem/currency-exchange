@@ -22,12 +22,13 @@ export function renderCurrenciesList(
     listElement,
     titleElement
 ) {
+    //Fist clean listElement
+    listElement.innerHTML = '';
+
     const { code, codein } = currenciesList[0];
 
     titleElement.textContent = `Prices of ${code} in ${codein} 
         from the last 30 days`;
-
-    listElement.innerContent = ``;
 
     const liElements = currenciesList.map((currency) => createLielement(currency));
 
