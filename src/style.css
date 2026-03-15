@@ -1,0 +1,148 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fff;
+  --light-gray:#373737;
+  --dark-gray: #24272E;
+  --gray-opacity: rgba(50, 50, 50, 0.5);
+  --black-opacity: rgba(0, 0, 0, 0.2);  
+
+  --green: #96EB95;
+  --dark-green: #65a372;
+  --yellow: #FFE713;
+}
+
+body {
+  background-image: url('assets/bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'sans-serif';
+  min-height: 100vh;
+}
+
+.container{
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 10%;
+}
+
+h1 {
+  color: var(--white);
+  font-size: 3em;
+  margin-bottom: 1em;
+}
+
+h1 span {
+  color: var(--green);
+}
+
+form {
+  display: flex;
+  align-items: flex-end;
+  gap: 3em;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+
+/* h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+} */
+
+/* button {
+  background-color: var(--green);
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  color: #373737;
+}
+
+button:hover {
+  background-color: #65a372;
+}
+
+main {
+  background: var(--grey);
+  border-radius: 20px;
+  height: 580px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+} */
+
+
+.input-currency, .btn-search {
+  height: 48px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+}
+
+.input-currency { 
+  padding: 0.5rem;
+  background: var(--white);
+  color: black;
+  margin-top: 0.3em;
+}
+
+.btn-search{
+  background-color: var(--green);
+  padding: 0.5rem 2rem;
+  font-weight: 700;
+  color: var(--light-gray);
+  cursor: pointer;
+}
+
+.btn-search:hover {
+  background: var(--dark-green);
+}
+
+.currencies-container {
+  background: var(--gray-opacity);
+  border-radius: 20px;
+  height: 580px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 2em;
+}
+
+.currencies-title {
+  color: var(--white);
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.currencies-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  list-style-type: none;
+  overflow-y: auto;
+  min-height: 500px;
+}
+
+.currencies-list li {
+  background:  var(--black-opacity);
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  gap: 1em
+}
+
+.currencies-list li span {
+  color: var(--yellow);
+}
