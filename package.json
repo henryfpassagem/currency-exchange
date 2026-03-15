@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "vite --open" 
+    "dev": "vite --open"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/henryfpassagem/currency-exchange#readme",
   "dependencies": {
+    "sweetalert2": "^11.26.22",
     "vite": "^8.0.0"
   }
 }
