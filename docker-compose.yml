@@ -1,0 +1,12 @@
+services:
+  currency-exchange-app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev # Points to the dev file
+    ports:
+      - "5173:5173" # Maps the dev port
+    volumes:
+      - .:/app # Maps the local folder directly into the container.
+               # When you change a file in VS Code on your laptop, it changes instantly inside the container
+      - /app/node_modules # Prevents local node_modules from overwriting container's
+    # restart: always

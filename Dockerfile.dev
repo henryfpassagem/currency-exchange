@@ -1,0 +1,23 @@
+# 1. Use Node.js 20 image on a Alpine Linux distribution
+FROM node:20-alpine
+
+# 2. Set the working directory inside the container to /app
+# All subsequent comands (COPY, RUN) will happen inside this folder
+WORKDIR /app
+
+# 3. Copy only the package files first to the /app folder in the container
+# This prevents re-installing dependencies if only the source code is changed
+COPY package*.json ./
+
+# 4. Install the project dependencies defined in package.json
+RUN npm install
+
+# 5. Copy the rest of the application source code into the container
+COPY . .
+
+# 6. Expose the default Vite port 5173
+EXPOSE 5173
+
+# 7. Run the development server
+# "--host" is necessary to make the server accessible from outside the container
+CMD ["npm", "run", "dev", "--", "--host"]
