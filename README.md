@@ -1,5 +1,5 @@
 # currency-exchange
 
-![Video](https://github.com/henryfpassagem/currency-exchange/blob/main/src/assets/video-currency-exchange.mp4)
+https://github.com/user-attachments/assets/38ba496f-f8be-4a8d-bfac-33a74ed9759e
 
 
