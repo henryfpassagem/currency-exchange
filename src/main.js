@@ -5,7 +5,7 @@
 // 5 - Add error validation
 
 //import Swal from "sweetalert2";
-import { renderCurrenciesList } from "./helpers";
+import { renderCurrenciesList } from "./helpers.js";
 
 import "./style.css";
 
