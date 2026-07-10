@@ -80,6 +80,9 @@ main {
   padding: 1rem;
 } */
 
+select, option {
+    font-family: 'Noto Color Emoji', sans-serif;
+}
 
 .select-your-currency, .select-target-currency,.btn-search {
   height: 48px;
