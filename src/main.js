@@ -30,8 +30,9 @@ buttonElement.addEventListener('click', (event) => {
             throw new Error("error fetching data");
         })
         .then((currenciesList) => {
+            const currenciesArray = Object.values(currenciesList);
             renderCurrenciesList(
-                currenciesList,
+                currenciesArray,
                 listElement,
                 titleElement
             );
