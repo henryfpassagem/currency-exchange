@@ -4,7 +4,7 @@
 // 4 - Render the data
 // 5 - Add error validation
 
-import Swal from "sweetalert2";
+//import Swal from "sweetalert2";
 import { renderCurrenciesList } from "./helpers";
 
 import "./style.css";
