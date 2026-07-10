@@ -15,15 +15,6 @@ https://github.com/user-attachments/assets/38ba496f-f8be-4a8d-bfac-33a74ed9759e
 
 ---
 
-## ✨ Features
-
-* **Real-Time Data Fetching:** Interacts dynamically with the AwesomeAPI to fetch currency conversions.
-* **30-Day Historical Trends:** Converts API data streams into readable daily listing parameters.
-* **Dark-Themed Modern UI:** Custom styles tailored with a sophisticated CSS palette.
-* **Cross-Browser Compatibility:** Designed using clean native JavaScript modules and standard relative fallbacks for smooth GitHub Pages deployment.
-
----
-
 ## 🛠️ Tech Stack
 
 * **HTML5** - Semantic layout and structure
