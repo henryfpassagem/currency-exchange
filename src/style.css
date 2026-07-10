@@ -17,10 +17,10 @@
 }
 
 body {
-  background-image: url('assets/bg.svg');
+  background-image: url('../src/assets/bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
-  font-family: 'sans-serif';
+  font-family: sans-serif;
   min-height: 100vh;
 }
 

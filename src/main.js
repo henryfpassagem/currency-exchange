@@ -20,7 +20,7 @@ buttonElement.addEventListener('click', (event) => {
     event.preventDefault();
     
     const API_URL = "https://economia.awesomeapi.com.br/"
-    const API_ENDPOINT = `json/daily/${selectYourCurrencyElement.value}-${selectTargetCurrencyElement.value}/30`
+    const API_ENDPOINT = `json/daily/${selectTargetCurrencyElement.value}-${selectYourCurrencyElement.value}/30`
 
     fetch(`${API_URL}${API_ENDPOINT}`)
         .then((response) => {
