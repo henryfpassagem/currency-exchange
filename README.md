@@ -1,4 +1,4 @@
-## Currency Exchange
+##Currency Exchange
 
 This application can be accessed at https://henryfpassagem.github.io/currency-exchange/
 
