@@ -81,7 +81,7 @@ main {
 } */
 
 
-.input-currency, .btn-search {
+.select-your-currency, .select-target-currency,.btn-search {
   height: 48px;
   border-radius: 10px;
   font-size: 1.5rem;
@@ -89,7 +89,7 @@ main {
   border: none;
 }
 
-.input-currency { 
+.select-your-currency, .select-target-currency { 
   padding: 0.5rem;
   background: var(--white);
   color: black;

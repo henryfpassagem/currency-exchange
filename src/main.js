@@ -10,7 +10,8 @@ import { renderCurrenciesList } from "./helpers";
 import "./style.css";
 
 const buttonElement = document.querySelector(".btn-search");
-const inputElement = document.querySelector(".input-currency");
+const selectYourCurrencyElement = document.querySelector(".select-your-currency");
+const selectTargetCurrencyElement = document.querySelector(".select-target-currency");
 const listElement = document.querySelector(".currencies-list");
 const titleElement = document.querySelector(".currencies-title");
 
@@ -19,7 +20,7 @@ buttonElement.addEventListener('click', (event) => {
     event.preventDefault();
     
     const API_URL = "https://economia.awesomeapi.com.br/"
-    const API_ENDPOINT = `json/daily/${inputElement.value}/30`
+    const API_ENDPOINT = `json/daily/${selectYourCurrencyElement.value}-${selectTargetCurrencyElement.value}/30`
 
     fetch(`${API_URL}${API_ENDPOINT}`)
         .then((response) => {

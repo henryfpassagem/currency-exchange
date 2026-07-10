@@ -13,8 +13,26 @@
 
         <form>
             <label>
-                Type the currency:
-                <input type="text" name="currency" class="input-currency">
+                Your currency:
+                <select name="currency" class="select-your-currency">
+                    <option value="null"></option>
+                    <option value="USD">🇺🇸 USD - US Dollar</option>
+                    <option value="EUR">🇪🇺 EUR - Euro</option>
+                    <option value="GBP">🇬🇧 GBP - British Pound</option>
+                    <option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+                    <option value="BRL">🇧🇷 BRL - Brazilian Real</option>
+                </select>
+            </label>
+            <label>
+                Target currency:
+                <select name="currency" class="select-target-currency">
+                    <option value="null"></option>
+                    <option value="USD">🇺🇸 USD - US Dollar</option>
+                    <option value="EUR">🇪🇺 EUR - Euro</option>
+                    <option value="GBP">🇬🇧 GBP - British Pound</option>
+                    <option value="CHF">🇨🇭 CHF - Swiss Franc</option>
+                    <option value="BRL">🇧🇷 BRL - Brazilian Real</option>
+                </select>
             </label>
             <button class="btn-search">Search</button>
         </form>

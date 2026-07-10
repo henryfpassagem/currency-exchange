@@ -8,7 +8,7 @@ function createLielement(currency){
     const MILISECONDS = 1000;
     const date = new Date(currency.timestamp * MILISECONDS);
 
-    dateElement.textContent = date.toLocaleDateString('en-US');
+    dateElement.textContent = date.toLocaleDateString('en-US', { timeZone: 'UTC' });
     valueElement.textContent = currency.ask;
 
     LiElement.appendChild(dateElement);
