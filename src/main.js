@@ -7,7 +7,7 @@
 //import Swal from "sweetalert2";
 import { renderCurrenciesList } from "./helpers.js";
 
-import "./style.css";
+//import "./style.css";
 
 const buttonElement = document.querySelector(".btn-search");
 const selectYourCurrencyElement = document.querySelector(".select-your-currency");
